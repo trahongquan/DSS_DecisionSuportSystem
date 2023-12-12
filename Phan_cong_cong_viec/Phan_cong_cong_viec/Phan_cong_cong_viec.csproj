@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5A83A76-04C0-4FA2-B447-1B15D21B6D31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Phan_cong_cong_viec</RootNamespace>
+    <AssemblyName>Phan_cong_cong_viec</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CongViec.cs" />
+    <Compile Include="DAL.cs" />
+    <Compile Include="DangnhapBLL.cs" />
+    <Compile Include="FormChonCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChonCongViec.Designer.cs">
+      <DependentUpon>FormChonCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCongViec.Designer.cs">
+      <DependentUpon>FormCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangnhap.Designer.cs">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiaoDienNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiaoDienNhanVien.Designer.cs">
+      <DependentUpon>FormGiaoDienNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiaoDienQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiaoDienQuanLy.Designer.cs">
+      <DependentUpon>FormGiaoDienQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhanCongCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhanCongCongViec.Designer.cs">
+      <DependentUpon>FormPhanCongCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhanVien.Designer.cs">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChonNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChonNhanVien.Designer.cs">
+      <DependentUpon>FormChonNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhanCong.Designer.cs">
+      <DependentUpon>FormPhanCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinCongViec.Designer.cs">
+      <DependentUpon>FormThongTinCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinNhanVien.Designer.cs">
+      <DependentUpon>FormThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTraCuuThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTraCuuThongTin.Designer.cs">
+      <DependentUpon>FormTraCuuThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormXemLichPCCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormXemLichPCCV.Designer.cs">
+      <DependentUpon>FormXemLichPCCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs" />
+    <Compile Include="Khanangbll.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CongViecBLL.cs" />
+    <Compile Include="NhanvienBLL.cs" />
+    <Compile Include="QL_phan_cong_cong_viecDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_phan_cong_cong_viecDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormChonCongViec.resx">
+      <DependentUpon>FormChonCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCongViec.resx">
+      <DependentUpon>FormCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangnhap.resx">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiaoDienNhanVien.resx">
+      <DependentUpon>FormGiaoDienNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGiaoDienQuanLy.resx">
+      <DependentUpon>FormGiaoDienQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhanCongCongViec.resx">
+      <DependentUpon>FormPhanCongCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhanVien.resx">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChonNhanVien.resx">
+      <DependentUpon>FormChonNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhanCong.resx">
+      <DependentUpon>FormPhanCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinCongViec.resx">
+      <DependentUpon>FormThongTinCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinNhanVien.resx">
+      <DependentUpon>FormThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTraCuuThongTin.resx">
+      <DependentUpon>FormTraCuuThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormXemLichPCCV.resx">
+      <DependentUpon>FormXemLichPCCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_phan_cong_cong_viecDataSet.xsc">
+      <DependentUpon>QL_phan_cong_cong_viecDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_phan_cong_cong_viecDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_phan_cong_cong_viecDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_phan_cong_cong_viecDataSet.xss">
+      <DependentUpon>QL_phan_cong_cong_viecDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
